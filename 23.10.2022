@@ -1,0 +1,105 @@
+zad 1
+int a=int.Parse(Console.ReadLine());
+int b=int.Parse(Console.ReadLine());
+int c=0;
+
+c = a + b;
+if (c%2==0)
+{
+    Console.WriteLine("Tak");
+}
+else
+{
+    Console.WriteLine("nie");
+}
+zad 2
+int a=int.Parse(Console.ReadLine());
+int g=int.Parse(Console.ReadLine());
+int śr_artmetyczna=0;
+int śr_geometryczna =0;
+
+
+śr_artmetyczna = (a+g)/2;
+śr_geometryczna = (g * a) / 2;
+if (śr_artmetyczna>śr_geometryczna)
+{
+    Console.WriteLine("Tak");
+}
+else
+{
+    Console.WriteLine("nie");
+}
+zad 3
+Console.WriteLine("Podaj m");
+int m=int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj l");
+int l=int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj k");
+int k=int.Parse(Console.ReadLine());
+int c = 0;
+int a = 0;
+
+
+if (k==m)
+{
+    c = k;
+    a = m;
+    Console.WriteLine("k:" + c + " wynosi tyle samo co " + "m:" + a);
+
+}
+else if(k==l)
+{
+    c = k;
+    a = l;
+    Console.WriteLine("k:" + c + " wynosi tyle samo co " + "l:" + a);
+}
+else if (m==l)
+{
+    c = m;
+    a = l;
+    Console.WriteLine("m:" + c +" wynosi tyle samo co "+ "l:" + a);
+}
+else
+{
+    Console.WriteLine("nie");
+}
+zad 4
+Console.WriteLine("Podaj a");
+int a=int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj b");
+int b=int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj c");
+int c=int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj d");
+int d=int.Parse(Console.ReadLine());
+int min=100000;
+min = a;
+if (min>b)
+{
+    min=b;
+}
+else if (min > c)
+{
+    min = c;
+}
+else if (min > d)
+{
+    min = d;
+}
+Console.WriteLine(min);
+zad 5
+Console.WriteLine("Podaj a");
+int a=int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj b");
+int b=int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj c");
+int c = int.Parse(Console.ReadLine());
+
+if (a < b + c || b < a + c || c < b + a)
+{
+    Console.WriteLine("tak");
+}
+else
+{
+    Console.WriteLine("nie");
+}
